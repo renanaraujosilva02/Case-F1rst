@@ -60,3 +60,13 @@ A classe `Livro` contém os seguintes campos:
 - **Escalabilidade**: Utilizar Kubernetes para orquestrar contêineres.
 - **Monitoramento e Logs**: Integrar com Prometheus e Grafana.
 - **Testes Automatizados**: Expandir a cobertura de testes unitários e de integração.
+---
+
+# Ferramentas necessárias para o Projeto ⚙️
+Você vai precisar:
+
+- **Eclipse**: Para conseguir visualizar o projeto.
+- **Maven**: Para gerenciar dependências e construir o projeto.
+- **Redis**: Para implementar caching e otimizar as leituras da API.
+- **Docker**: Para orquestrar os contêineres da aplicação, do PostgreSQL e do Redis.
+- **Postman**: Para testar os endpoints da API de forma interativa.
