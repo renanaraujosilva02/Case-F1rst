@@ -49,4 +49,14 @@ A classe `Livro` contém os seguintes campos:
 - **Gêneros Principal e Secundário**  
 - **Tipo**: (eBook, Paperback, etc.)  
 - **Preço, Avaliação e Número de Avaliações**  
-- **URL de Referência**  
+- **URL de Referência**
+
+---
+
+## 🔧 Melhorias Futuras
+
+- **Autenticação e Autorização**: Implementar com Spring Security.
+- **Banco em Nuvem**: Migrar o PostgreSQL para a cloud.
+- **Escalabilidade**: Utilizar Kubernetes para orquestrar contêineres.
+- **Monitoramento e Logs**: Integrar com Prometheus e Grafana.
+- **Testes Automatizados**: Expandir a cobertura de testes unitários e de integração.
