@@ -251,22 +251,19 @@ Siga estas instruções para compilar, executar e testar o projeto corretamente.
 ---
 
 ### 📂 Passo 1: Navegar até a Pasta do Projeto
-Abra o **Prompt de Comando**, **Terminal** ou **PowerShell** e navegue até a pasta raiz do projeto:
+Abra o **Prompt de Comando**, **Terminal** ou **PowerShell** e navegue até a pasta raiz do projeto: cd /caminho/para/o/projeto
 
 
-cd /caminho/para/o/projeto
 🛠️ Passo 2: Compilar e Instalar Dependências
 Execute o seguinte comando para compilar o projeto e instalar as dependências, ignorando a execução dos testes:
-
-
 mvn clean install -DskipTests
 mvn clean: Remove arquivos de compilação anteriores.
 install: Baixa e instala todas as dependências.
 -DskipTests: Ignora a execução dos testes durante a instalação.
 
+
 🐳 Passo 3: Iniciar os Contêineres com Docker Compose
 Inicie os contêineres do projeto usando o comando abaixo. Isso garante que eles sejam construídos do zero:
-
 docker-compose up --build
 up: Inicia os contêineres definidos no arquivo docker-compose.yml.
 --build: Reconstrói as imagens Docker.
@@ -276,6 +273,5 @@ Dica: Use -d para rodar os contêineres em segundo plano:
 docker-compose up --build -d
 🧪 Passo 4: Executar Testes Unitários
 Execute os testes unitários para garantir que tudo está funcionando corretamente:
-
 mvn test
 Executa os testes configurados no projeto.
