@@ -241,3 +241,46 @@ Siga os passos abaixo para instalar o Postman no seu sistema operacional.
 1. **Via Snap**:
    ```bash
    sudo snap install postman
+
+---
+
+# 🚀 Como Executar o Projeto via Linha de Comando
+
+Siga estas instruções para compilar, executar e testar o projeto corretamente.
+
+---
+
+## 📂 Passo 1: Navegar até a Pasta do Projeto
+Abra o **Prompt de Comando**, **Terminal** ou **PowerShell** e navegue até a pasta raiz do projeto:
+
+```bash
+cd /caminho/para/o/projeto
+🛠️ Passo 2: Compilar e Instalar Dependências
+Execute o seguinte comando para compilar o projeto e instalar as dependências, ignorando a execução dos testes:
+
+bash
+Copiar código
+mvn clean install -DskipTests
+mvn clean: Remove arquivos de compilação anteriores.
+install: Baixa e instala todas as dependências.
+-DskipTests: Ignora a execução dos testes durante a instalação.
+🐳 Passo 3: Iniciar os Contêineres com Docker Compose
+Inicie os contêineres do projeto usando o comando abaixo. Isso garante que eles sejam construídos do zero:
+
+bash
+Copiar código
+docker-compose up --build
+up: Inicia os contêineres definidos no arquivo docker-compose.yml.
+--build: Reconstrói as imagens Docker.
+Dica: Use -d para rodar os contêineres em segundo plano:
+
+bash
+Copiar código
+docker-compose up --build -d
+🧪 Passo 4: Executar Testes Unitários
+Execute os testes unitários para garantir que tudo está funcionando corretamente:
+
+bash
+Copiar código
+mvn test
+mvn test: Executa os testes configurados no projeto.
