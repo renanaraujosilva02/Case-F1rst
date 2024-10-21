@@ -11,36 +11,36 @@ public class Livro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;                  // ID do livro
+    private Long id;                  
     
-    								  // Definido como TEXT para tratativa de erro
+    // Title e URL definidos como TEXT para tratativa de erro
     @Column(name = "title", columnDefinition = "TEXT")
-    private String title;             // Título do livro
+    private String title;             
     
     @Column(name = "author")
-    private String author;            // Autor do livro
+    private String author;            
     
     @Column(name = "main_genre")
-    private String mainGenre;         // Gênero principal
+    private String mainGenre;         
     
     @Column(name = "sub_genre")
-    private String subGenre;          // Subgênero
+    private String subGenre;          
     
     @Column(name = "type")
-    private String type;              // Tipo (Ex: eBook, Paperback)
+    private String type;              
     
     @Column(name = "price")
-    private Double price;             // Preço do livro
+    private Double price;             
     
     @Column(name = "rating")
-    private Double rating;            // Avaliação
+    private Double rating;           
     
     @Column(name = "no_of_people_rated")
-    private Integer noOfPeopleRated;   // Número de pessoas que avaliaram
+    private Integer noOfPeopleRated;   
     
-    								   // Definido como TEXT para tratativa de erro
+    								   
     @Column(name = "urls", columnDefinition = "TEXT")
-    private String urls;              // URLs relacionadas ao livro
+    private String urls;              
 
     // Construtores
     public Livro() {}

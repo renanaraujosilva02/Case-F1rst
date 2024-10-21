@@ -20,26 +20,27 @@ public class DataGenerator {
         this.faker = new Faker();
         this.livroRepository = livroRepository;
     }
-
+    
+    // Gera os livros
     public List<Livro> generateFakeBooks(int quantity) {
         List<Livro> books = new ArrayList<>();
         
         for (int i = 0; i < quantity; i++) {
             Livro livro = new Livro(
-                faker.book().title(),  // Gera um título de livro falso
-                faker.book().author(), // Gera o nome de um autor falso
-                faker.options().option("Fiction", "Non-Fiction", "Science", "History"), // Gênero principal
-                faker.options().option("Mystery", "Fantasy", "Biography", "Romance"),  // Subgênero
-                faker.options().option("eBook", "Paperback", "Hardcover"),  // Tipo de livro
+                faker.book().title(),  
+                faker.book().author(), 
+                faker.options().option("Fiction", "Non-Fiction", "Science", "History"), 
+                faker.options().option("Mystery", "Fantasy", "Biography", "Romance"),  
+                faker.options().option("eBook", "Paperback", "Hardcover"), 
                 faker.number().randomDouble(2, 5, 200),  // Preço entre 5 e 200, com 2 casas decimais
                 faker.number().randomDouble(2, 1, 5),  // Avaliação entre 1.0 e 5.0
                 faker.number().numberBetween(1, 100000), // Número de pessoas que avaliaram
-                faker.internet().url()  // Gera uma URL falsa
+                faker.internet().url()  
             );
             books.add(livro);
         }
 
-        // Persistir os livros no banco de dados
+        
         livroRepository.saveAll(books); // Salva todos os livros gerados
         return books; // Retorna a lista de livros gerados
     }
