@@ -28,7 +28,7 @@ A API segue o padrão **MVC (Model-View-Controller)**:
 
 ---
 
-#### Lógica de Negócios:
+## 💼Lógica de Negócios:
 
 A classe `DataGenerator` gera 10 livros fictícios por execução usando a biblioteca Java Faker. Esses livros são salvos no banco via repositório JPA.
 
