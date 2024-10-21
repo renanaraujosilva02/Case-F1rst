@@ -69,7 +69,7 @@ Você vai precisar:
 - **Eclipse**: Para conseguir visualizar o projeto.
 - **Maven**: Para gerenciar dependências e construir o projeto.
 - **Redis**: Para implementar caching e otimizar as leituras da API.
-- **Docker**: Para orquestrar os contêineres da aplicação, do PostgreSQL e do Redis.
+- **Docker Compose**: Para orquestrar os contêineres da aplicação, do PostgreSQL e do Redis.
 - **Postman**: Para testar os endpoints da API de forma interativa.
 
 ---
@@ -182,3 +182,62 @@ Siga os passos abaixo para instalar o **Redis** no seu sistema operacional.
    ```bash
    sudo apt update
    sudo apt install redis-server
+
+---
+
+# Como Baixar e Instalar o Docker
+
+Siga as etapas abaixo para instalar o Docker no seu sistema operacional.
+
+---
+
+## 🔽 Passo 1: Baixar o Docker
+
+### **Windows e macOS**
+1. Acesse a página oficial do Docker: [Docker Desktop](https://www.docker.com/products/docker-desktop).
+2. Escolha a versão adequada para seu sistema operacional (Windows ou macOS).
+3. Baixe o instalador (`.exe` para Windows ou `.dmg` para macOS).
+
+### **Linux (Ubuntu/Debian)**  
+1. Abra o terminal e execute:
+   ```bash
+   sudo apt update
+   sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   sudo apt update
+   sudo apt install docker-ce
+
+---
+
+# Como Baixar e Instalar o Postman
+
+Siga os passos abaixo para instalar o Postman no seu sistema operacional.
+
+---
+
+## 🔽 Passo 1: Baixar o Postman
+
+1. Acesse a página oficial do Postman: [Postman Downloads](https://www.postman.com/downloads/).
+2. Escolha a versão compatível com seu sistema operacional:
+   - **Windows**: `.exe` ou `.zip`
+   - **macOS**: `.dmg`
+   - **Linux**: `.tar.gz` ou via Snap
+
+---
+
+## 🖥️ Passo 2: Instalação por Sistema Operacional
+
+### **Windows**
+1. Execute o instalador `.exe` baixado.
+2. Siga as instruções na tela para concluir a instalação.
+3. Após a instalação, abra o Postman a partir do Menu Iniciar ou da área de trabalho.
+
+### **macOS**
+1. Abra o arquivo `.dmg` e arraste o ícone do Postman para a pasta **Aplicativos**.
+2. Após a instalação, abra o Postman a partir da **Launchpad** ou da pasta **Aplicativos**.
+
+### **Linux (Ubuntu/Debian)**
+1. **Via Snap**:
+   ```bash
+   sudo snap install postman
