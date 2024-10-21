@@ -65,8 +65,120 @@ A classe `Livro` contém os seguintes campos:
 # Ferramentas necessárias para o Projeto ⚙️
 Você vai precisar:
 
+- **Java-17**: Linguagem e versão.
 - **Eclipse**: Para conseguir visualizar o projeto.
 - **Maven**: Para gerenciar dependências e construir o projeto.
 - **Redis**: Para implementar caching e otimizar as leituras da API.
 - **Docker**: Para orquestrar os contêineres da aplicação, do PostgreSQL e do Redis.
 - **Postman**: Para testar os endpoints da API de forma interativa.
+
+---
+
+# Baixando e instalando ferramentas ⚙️
+
+# Como Baixar e Instalar o Java 17.11
+
+Siga os passos abaixo para instalar o **Java 17.11**:
+
+## Passo 1: Baixar o Java 17.11
+1. Acesse a página oficial do [Oracle Java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) ou [Adoptium](https://adoptium.net/temurin/releases/).
+2. Escolha a versão **17.11** do JDK (Java Development Kit) para o seu sistema operacional (Windows, macOS ou Linux).
+3. Baixe o instalador apropriado:
+   - **Windows**: `.msi` ou `.zip`
+   - **macOS**: `.dmg`
+   - **Linux**: `.tar.gz` ou pacotes `.deb/.rpm`
+
+> **Nota**: Para baixar pela Oracle, você precisa criar uma conta gratuita.
+
+---
+
+## Passo 2: Instalar o Java 17.11
+### **Windows**
+1. Execute o instalador `.msi` baixado.
+2. Siga as instruções na tela.
+3. Durante a instalação, marque a opção para adicionar o Java ao **PATH**.
+4. Conclua a instalação e reinicie o terminal/PC, se necessário.
+
+### **macOS**
+1. Abra o arquivo `.dmg` e arraste o Java para a pasta **Aplicativos**.
+2. Verifique se o Java foi instalado corretamente executando `java -version` no terminal.
+
+### **Linux**
+1. Extraia o arquivo `.tar.gz` para `/opt` ou um diretório de sua escolha:
+   ```bash
+   sudo tar -xvzf openjdk-17.11_linux-x64_bin.tar.gz -C /opt/
+
+- **Verificando a instalação**: Execute o comando no prompt: java -version
+
+---
+
+# Como Baixar e Instalar o Eclipse
+
+Para baixar e instalar o Eclipse, siga os passos abaixo:
+
+## Passo 1: Baixar o Eclipse
+1. Acesse a página oficial do Eclipse: [Eclipse Downloads](https://www.eclipse.org/downloads/).
+2. Escolha a versão desejada. A versão **Eclipse IDE for Java Developers** é recomendada para a maioria dos desenvolvedores Java.
+3. Clique no botão **Download** para baixar o instalador.
+
+## Passo 2: Executar o Instalador
+1. Após o download, localize o arquivo do instalador (geralmente chamado de `eclipse-inst-win64.exe` para Windows ou `eclipse-inst-mac64.dmg` para macOS).
+2. Execute o arquivo baixado:
+   - No Windows, clique duas vezes no arquivo para iniciar o instalador.
+   - No macOS, arraste o Eclipse para a pasta Aplicativos.
+
+## Passo 3: Instalar o Eclipse
+1. Selecione a versão do Eclipse que deseja instalar (por exemplo, **Eclipse IDE for Java Developers**).
+2. Escolha um diretório de instalação (o padrão é geralmente adequado).
+3. Clique em **Install** para iniciar a instalação.
+4. Aceite os termos da licença quando solicitado.
+5. Aguarde enquanto o Eclipse é instalado. Isso pode levar alguns minutos.
+
+---
+
+# Como Baixar e Instalar o Maven
+
+Para baixar e instalar o Maven, siga os passos abaixo:
+
+### Passo 1: Baixar o Maven
+1. Acesse a página oficial do Maven: [Apache Maven Download](https://maven.apache.org/download.cgi).
+2. Escolha a versão desejada. Normalmente, você deve optar pela versão mais recente (geralmente a que aparece no topo).
+3. Clique no link para o arquivo ZIP ou TAR.GZ para baixar o Maven.
+
+### Passo 2: Extrair o Maven
+- Extraia o arquivo baixado em um diretório de sua escolha. Por exemplo, `C:\Programas\apache-maven-<versão>` no Windows ou `/opt/apache-maven-<versão>` no Linux.
+
+### Passo 3: Configurar Variáveis de Ambiente
+#### No Windows:
+1. Abra as Configurações do Sistema:
+   - Clique com o botão direito em "Este PC" ou "Meu Computador" e selecione "Propriedades".
+   - Clique em "Configurações avançadas do sistema".
+   - Clique em "Variáveis de Ambiente".
+
+2. Adicione uma nova variável de sistema:
+   - Clique em "Novo" na seção "Variáveis do sistema".
+   - Nomeie a variável como `MAVEN_HOME` e coloque o caminho da pasta onde você extraiu o Maven como valor (por exemplo, `C:\Programas\apache-maven-<versão>`).
+
+3. Atualize a variável `PATH`:
+   - Na lista de variáveis do sistema, encontre a variável `Path` e clique em "Editar".
+   - Adicione o seguinte caminho ao final da lista: `%MAVEN_HOME%\bin`.
+
+---
+
+# Como Baixar e Instalar o Redis
+
+Siga os passos abaixo para instalar o **Redis** no seu sistema operacional.
+
+---
+
+## 🔽 Passo 1: Baixar o Redis
+
+### **Windows**
+1. Acesse o repositório oficial: [Redis for Windows (Memurai)](https://github.com/microsoftarchive/redis/releases) ou [Redis Windows Fork](https://github.com/tporadowski/redis/releases).
+2. Baixe a versão mais recente disponível (um arquivo `.zip` ou `.msi`).
+
+### **Linux**
+1. Abra o terminal e execute:
+   ```bash
+   sudo apt update
+   sudo apt install redis-server
