@@ -263,10 +263,11 @@ mvn clean install -DskipTests
 
 🐳 Passo 3: Iniciar os Contêineres com Docker Compose
 Inicie os contêineres do projeto usando o comando abaixo. Isso garante que eles sejam construídos do zero:
-docker-compose up --build
+docker-compose up --build.
+
 up: Inicia os contêineres definidos no arquivo docker-compose.yml.
---build: Reconstrói as imagens Docker.
-Dica: Use -d para rodar os contêineres em segundo plano: docker-compose up --build -d
+build: Reconstrói as imagens Docker.
+Dica: Use -d para rodar os contêineres em segundo plano: docker-compose up --build -d.
 
 
 ---
