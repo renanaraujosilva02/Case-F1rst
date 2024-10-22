@@ -269,6 +269,8 @@ up: Inicia os contêineres definidos no arquivo docker-compose.yml.
 Dica: Use -d para rodar os contêineres em segundo plano: docker-compose up --build -d
 
 
+---
+
 🧪 Passo 4: Executar Testes Unitários
 Execute os testes unitários para garantir que tudo está funcionando corretamente:
 mvn test
