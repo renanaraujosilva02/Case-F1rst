@@ -157,11 +157,11 @@ Para baixar e instalar o Maven, siga os passos abaixo:
 
 2. Adicione uma nova variável de sistema:
    - Clique em "Novo" na seção "Variáveis do sistema".
-   - Nomeie a variável como `MAVEN_HOME` e coloque o caminho da pasta onde você extraiu o Maven como valor (por exemplo, `C:\Programas\apache-maven-<versão>`).
+   - Nomeie a variável como `M2_HOME` e coloque o caminho da pasta onde você extraiu o Maven como valor (por exemplo, `C:\Programas\apache-maven-<versão>`).
 
 3. Atualize a variável `PATH`:
    - Na lista de variáveis do sistema, encontre a variável `Path` e clique em "Editar".
-   - Adicione o seguinte caminho ao final da lista: `%MAVEN_HOME%\bin`.
+   - Adicione o seguinte caminho ao final da lista: `%M2_HOME%\bin`.
 
 ---
 
