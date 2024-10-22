@@ -270,5 +270,5 @@ Inicie os contêineres do projeto usando o comando abaixo. Isso garante que eles
 
 ---
 
-🧪 Passo 4: Executar Testes Unitários
+#### 🧪 Passo 4: Executar Testes Unitários
 Execute os testes unitários para garantir que tudo está funcionando corretamente: **mvn test**
