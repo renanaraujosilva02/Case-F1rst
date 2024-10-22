@@ -291,8 +291,9 @@ Execute os testes unitários para garantir que tudo está funcionando corretamen
 
 ---
 
-## 🚀 Endpoints Disponíveis  
+## 🚀 Postman - Endpoints Disponíveis  
 - **GET /books**: Retorna todos os livros.  
 - **GET /books/{id}**: Busca um livro por ID.  
 - **GET /books/main-genre/{mainGenre}**: Filtra por gênero principal.  
-- **GET /books/author/{author}**: Filtra por autor.  
+- **GET /books/author/{author}**: Filtra por autor.
+- **Exemplo**: http://localhost:8080/books
