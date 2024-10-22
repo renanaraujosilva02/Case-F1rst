@@ -1,4 +1,4 @@
-# API de Catálogo de Livros 📚  
+# API - Catálogo de Livros 📚  
 
 API RESTful para o gerenciamento de um catálogo de livros, desenvolvida com **Spring Boot** e projetada para ser leve e escalável.  
 
@@ -30,7 +30,29 @@ A API segue o padrão **MVC (Model-View-Controller)**:
 
 ## 💼Lógica de Negócios:
 
-A classe `DataGenerator` gera 10 livros fictícios por execução usando a biblioteca Java Faker. Esses livros são salvos no banco via repositório JPA.
+## Cadastro e Gestão  
+Cada livro recebe um identificador único e é registrado com informações essenciais (título, autor, gênero, preço, etc.), garantindo organização e consistência.
+
+## Operações CRUD  
+A API permite criar, ler, atualizar e excluir livros para manter o catálogo sempre atualizado e acessível.
+
+## Filtros Inteligentes  
+Usuários podem buscar livros por autor, gênero ou tipo, facilitando uma navegação personalizada.
+
+## Otimização de Consultas  
+Livros mais acessados são servidos rapidamente para melhorar o desempenho e a experiência do usuário.
+
+## Geração Automática de Dados  
+Dados fictícios são criados para testes e validações, garantindo o bom funcionamento da API em diversos cenários.
+
+## Preparação para Crescimento  
+A estrutura é flexível e pronta para integrar novos recursos e conectar-se a outros sistemas no futuro.
+
+## Monitoramento e Manutenção  
+A lógica inclui verificação constante para assegurar a operação correta e a consistência dos dados.
+
+## Segurança e Controle Futuro  
+A API está preparada para implementar controles de acesso, protegendo as informações e garantindo a integridade do catálogo.
 
 ---
 
