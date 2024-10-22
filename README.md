@@ -1,6 +1,6 @@
 # API - Catálogo de Livros 📚  
 
-API RESTful para o gerenciamento de um catálogo de livros, desenvolvida com **Spring Boot** e projetada para ser leve e escalável.  
+API REST para o gerenciamento de um catálogo de livros, desenvolvida com **Spring Boot** e projetada para ser leve e escalável.  
 
 ## 🛠️ Tecnologias Utilizadas  
 - **Java 17**: Linguagem de desenvolvimento.  
