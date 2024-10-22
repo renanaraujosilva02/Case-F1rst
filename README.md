@@ -54,13 +54,6 @@ A lógica inclui verificação constante para assegurar a operação correta e a
 ## Segurança e Controle Futuro  
 A API está preparada para implementar controles de acesso, protegendo as informações e garantindo a integridade do catálogo.
 
----
-
-## 🚀 Endpoints Disponíveis  
-- **GET /books**: Retorna todos os livros.  
-- **GET /books/{id}**: Busca um livro por ID.  
-- **GET /books/main-genre/{mainGenre}**: Filtra por gênero principal.  
-- **GET /books/author/{author}**: Filtra por autor.  
 
 ---
 
@@ -294,3 +287,12 @@ Inicie os contêineres do projeto usando o comando abaixo. Isso garante que eles
 
 #### 🧪 Passo 4: Executar Testes Unitários
 Execute os testes unitários para garantir que tudo está funcionando corretamente: **mvn test**
+
+
+---
+
+## 🚀 Endpoints Disponíveis  
+- **GET /books**: Retorna todos os livros.  
+- **GET /books/{id}**: Busca um livro por ID.  
+- **GET /books/main-genre/{mainGenre}**: Filtra por gênero principal.  
+- **GET /books/author/{author}**: Filtra por autor.  
