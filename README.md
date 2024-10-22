@@ -254,14 +254,16 @@ Siga estas instruções para compilar, executar e testar o projeto corretamente.
 Abra o **Prompt de Comando**, **Terminal** ou **PowerShell** e navegue até a pasta raiz do projeto: cd /caminho/para/o/projeto
 
 
-🛠️ Passo 2: Compilar e Instalar Dependências
+---
+
+### 🛠️ Passo 2: Compilar e Instalar Dependências
 Execute o seguinte comando para compilar o projeto e instalar as dependências, ignorando a execução dos testes:
 **mvn clean install -DskipTests**
 
 
 ---
 
-🐳 Passo 3: Iniciar os Contêineres com Docker Compose
+### 🐳 Passo 3: Iniciar os Contêineres com Docker Compose
 Inicie os contêineres do projeto usando o comando abaixo. Isso garante que eles sejam construídos do zero:
 **docker-compose up --build**
 
