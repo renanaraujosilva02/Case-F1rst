@@ -257,10 +257,9 @@ Abra o **Prompt de Comando**, **Terminal** ou **PowerShell** e navegue até a pa
 🛠️ Passo 2: Compilar e Instalar Dependências
 Execute o seguinte comando para compilar o projeto e instalar as dependências, ignorando a execução dos testes:
 mvn clean install -DskipTests
-mvn clean: Remove arquivos de compilação anteriores.
-install: Baixa e instala todas as dependências.
--DskipTests: Ignora a execução dos testes durante a instalação.
 
+
+---
 
 🐳 Passo 3: Iniciar os Contêineres com Docker Compose
 Inicie os contêineres do projeto usando o comando abaixo. Isso garante que eles sejam construídos do zero:
